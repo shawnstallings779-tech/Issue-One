@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Issue One</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
+
+body{
+    background:#0d0d0d;
+    color:white;
+}
+
+a{
+    text-decoration:none;
+    color:white;
+}
+
+/* NAVBAR */
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    height:75px;
+    background:#111;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 60px;
+    z-index:1000;
+    border-bottom:1px solid #222;
+}
+
+.logo{
+    font-size:2rem;
+    font-weight:800;
+    color:#f44336;
+}
+
+.nav-links{
+    display:flex;
+    gap:35px;
+}
+
+.nav-links a:hover{
+    color:#f44336;
+}
+
+.profile{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    background:#444;
+}
+
+.header-tab {
+font-size: 16px;
+font-weight: bold;
+padding: 5px
+
+
+
+}
+
+/* HERO */
+
+.hero{
+
+    margin-top:75px;
+
+    height:70vh;
+
+    background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.8)),
+    url("https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1800&q=80");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+
+    padding:80px;
+
+}
+
+.hero-content{
+
+    max-width:650px;
+
+}
+
+.hero h1{
+
+    font-size:4rem;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    font-size:1.2rem;
+
+    color:#ddd;
+
+    margin-bottom:30px;
+
+    line-height:1.6;
+
+}
+
+.buttons{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.btn{
+
+    padding:15px 28px;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+}
+
+.primary{
+
+    background:#f44336;
+
+}
+
+.secondary{
+
+    border:1px solid #555;
+
+}
+
+/* SEARCH */
+
+.search-section{
+
+    padding:50px 80px;
+
+}
+
+.search{
+
+    width:100%;
+
+    max-width:700px;
+
+    padding:18px;
+
+    border-radius:10px;
+
+    border:none;
+
+    background:#1c1c1c;
+
+    color:white;
+
+    font-size:1rem;
+
+}
+
+/* SECTION */
+
+.section{
+
+    padding:0 80px 50px;
+
+}
+
+.section h2{
+
+    margin-bottom:25px;
+
+}
+
+/* CAROUSEL */
+
+.carousel{
+
+    display:flex;
+
+    gap:20px;
+
+    overflow-x:auto;
+
+    padding-bottom:10px;
+
+}
+
+.carousel::-webkit-scrollbar{
+
+    display:none;
+
+}
+
+.card{
+
+    min-width:220px;
+
+}
+
+.cover{
+
+    width:220px;
+
+    height:310px;
+
+    background:#333;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+}
+
+.cover:hover{
+
+    transform:scale(1.05);
+
+}
+
+.card h3{
+
+    margin-top:15px;
+
+    font-size:1rem;
+
+}
+
+.card p{
+
+    color:#aaa;
+
+    margin-top:5px;
+
+}
+
+/* QUIZ */
+
+.quiz{
+
+    background:#171717;
+
+    margin:70px 80px;
+
+    border-radius:20px;
+
+    padding:60px;
+
+    text-align:center;
+
+}
+
+.quiz h2{
+
+    font-size:2rem;
+
+    margin-bottom:15px;
+
+}
+
+.quiz p{
+
+    color:#aaa;
+
+    margin-bottom:30px;
+
+}
+
+.quiz button{
+
+    padding:16px 35px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#f44336;
+
+    color:white;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+}
+
+/* FOOTER */
+
+footer{
+
+    border-top:1px solid #222;
+
+    padding:40px;
+
+    text-align:center;
+
+    color:#777;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">Issue One</div>
+
+<div class="nav-links">
+
+<a style="padding-left: 25px;" class="header-tab" href="#">Characters</a>
+
+<a class="header-tab" href="#">Timelines</a>
+
+<a class="header-tab" href="#">Universes</a>
+
+<a class="header-tab" style="padding-right: 25px;" href="#">Quiz</a>
+
+</div>
+
+<div class="profile"></div>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Every Story Starts Somewhere.</h1>
+
+<p>
+Explore comic book timelines, discover the perfect reading order,
+and find your next favorite hero.
+</p>
+
+<div class="buttons">
+
+<div class="btn primary">Start Reading</div>
+
+<div class="btn secondary">Take the Quiz</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="search-section">
+
+<input type="text"
+    id="searchBar"
+    class="search"
+placeholder="Search Spider-Man, Batman, Wolverine..."
+>
+<div id="searchResults"></div>
+</section>
+
+<section class="section">
+
+<h2>Popular Characters</h2>
+
+<div class="carousel">
+
+<div class="card">
+<div class="cover"></div>
+<h3>Spider-Man</h3>
+<p>146 Story Arcs</p>
+</div>
+
+<div class="card">
+<div class="cover"></div>
+<h3>Batman</h3>
+<p>189 Story Arcs</p>
+</div>
+
+<div class="card">
+<div class="cover"></div>
+<h3>Daredevil</h3>
+<p>73 Story Arcs</p>
+</div>
+
+<div class="card">
+<div class="cover"></div>
+<h3>Green Lantern</h3>
+<p>84 Story Arcs</p>
+</div>
+
+<div class="card">
+<div class="cover"></div>
+<h3>Wolverine</h3>
+<p>99 Story Arcs</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Recommended Reading</h2>
+
+<div class="carousel">
+
+<div class="card">
+<div class="cover"></div>
+<h3>Year One</h3>
+<p>Batman</p>
+</div>
+
+<div class="card">
+<div class="cover"></div>
+<h3>Kraven's Last Hunt</h3>
+<p>Spider-Man</p>
+</div>
+
+<div class="card">
+<div class="cover"></div>
+<h3>Born Again</h3>
+<p>Daredevil</p>
+</div>
+
+<div class="card">
+<div class="cover"></div>
+<h3>Blackest Night</h3>
+<p>Green Lantern</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="quiz">
+
+<h2>Not Sure Where to Start?</h2>
+
+<p>
+Take our 2-minute quiz and we'll build your perfect comic reading order.
+</p>
+
+<button>Take the Quiz</button>
+
+</section>
+
+<footer>
+
+Issue One © 2026
+
+</footer>
+
+<script src="characters.js"></script>
+<script src="issue one.js"></script>
+ 
+    
+
+</body>
+</html>
